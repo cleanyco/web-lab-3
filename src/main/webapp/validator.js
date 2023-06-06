@@ -4,8 +4,6 @@ let point = {
     r: undefined
 }
 
-//todo отправлять на бэк строки (а r - число)
-
 let lastR = undefined;
 
 $(document).ready(function () {
@@ -26,7 +24,7 @@ $(document).ready(function () {
         }
     })
 })
-//fixme изменить интервалы с учётом невключенных границ
+
 function validateX() {
     if (   (point.x == null)
         || (point.x === "")

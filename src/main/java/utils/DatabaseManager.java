@@ -7,8 +7,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class DatabaseManager {
-    private static final String ADD = "INSERT INTO hits (hit, x, y, r, time, execution_time) VALUES (?,?,?,?,?,?)";
-    private static final String GET_ALL = "SELECT hit, x, y, r, time, execution_time FROM hits";
+    private static final String ADD = "INSERT INTO hits (hit, x, y, r, curr_time, execution_time) VALUES (?,?,?,?,?,?)";
+    private static final String GET_ALL = "SELECT hit, x, y, r, curr_time, execution_time FROM hits";
 
     private final Connection connection;
 

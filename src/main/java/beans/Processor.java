@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Processor {
     private DatabaseConnector databaseConnector = new DatabaseConnector("localhost",
-            "YOUR_NAME",  "YOUR_PASSWORD", "hit_results", 5432);
+            "postgres",  "trymebitch", "postgres", 5432); //oops :)
     private DatabaseManager databaseManager = new DatabaseManager(databaseConnector.getConnection());
 
     private long startTime;
@@ -45,11 +45,6 @@ public class Processor {
         return outputHits;
     }
 
-//    public String getLastHitResult() {
-//        if a
-//        return hits.get(hits.size()-1).getHit();
-//    }
-
     public void addHit() throws SQLException {
         startTime = System.currentTimeMillis();
         hit.setHit(checkHit());
@@ -75,7 +70,7 @@ public class Processor {
     private boolean checkCircle(double x, double y, double R) {
         return (x >= 0) && (y >= 0) && (Math.pow(x, 2) + Math.pow(y, 2) <= Math.pow(R, 2));
     }
-    //fixme исправить
+
     private boolean checkRectangle(double x, double y, double R) {
         return (x <= 0) && (x >= -R) && (y >= 0) & (y <= R/2);
     }
