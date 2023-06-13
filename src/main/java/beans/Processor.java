@@ -53,6 +53,14 @@ public class Processor {
 //        hit = new Hit(hit.getX(), hit.getY(), hit.getR());
     }
 
+    public void addTestHit() {
+        startTime = System.currentTimeMillis();
+        hit.setHit(checkHit());
+        hit.setCurrentTime(LocalDateTime.now().toString());
+        hit.setExecutionTime((System.currentTimeMillis() - startTime));
+        hits.add(hit);
+    }
+
     public String checkHit() {
         double x = hit.getX();
         double y = hit.getY();

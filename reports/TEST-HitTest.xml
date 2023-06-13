@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-IEF7HJV" name="HitTest" skipped="0" tests="3" time="0.351" timestamp="2023-06-13T18:37:09">
+<testsuite errors="0" failures="0" hostname="DESKTOP-IEF7HJV" name="HitTest" skipped="0" tests="3" time="0.382" timestamp="2023-06-13T19:34:08">
   <properties>
     <property name="java.vendor" value="OpenLogic-OpenJDK" />
     <property name="lib.dir" value="lib/" />
@@ -53,11 +53,11 @@
     <property name="user.home" value="C:\Users\chesn" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="test" value="src/test/java/" />
-    <property name="java.library.path" value="C:\Program Files\OpenLogic\jdk-8.0.372.07-hotspot\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\OpenLogic\jdk-8.0.372.07-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;%ANT_HOME%\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\chesn\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.2\bin;;C:\apache-ant-1.9.16\bin;;." />
+    <property name="java.library.path" value="C:\Program Files\OpenLogic\jdk-8.0.372.07-hotspot\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\OpenLogic\jdk-8.0.372.07-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;%ANT_HOME%\bin;C:\Program Files\TortoiseSVN\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\chesn\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.2\bin;;C:\apache-ant-1.9.16\bin;;C:\Users\chesn\AppData\Local\Programs\Microsoft VS Code\bin;." />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\cloned-projects\web-lab-3\reports\TEST-HitTest.xml crashfile=C:\cloned-projects\web-lab-3\junitvmwatcher4227498630847779191.properties propsfile=C:\cloned-projects\web-lab-3\junit3293394694822367020.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\cloned-projects\web-lab-3\reports\TEST-HitTest.xml crashfile=C:\cloned-projects\web-lab-3\junitvmwatcher7735688245868488626.properties propsfile=C:\cloned-projects\web-lab-3\junit7206976652645891973.properties" />
     <property name="java.class.path" value="C:\cloned-projects\web-lab-3\lib\ant-contrib-1.0b3.jar;C:\cloned-projects\web-lab-3\lib\apiguardian-api-1.1.2.jar;C:\cloned-projects\web-lab-3\lib\hamcrest-core-1.3.jar;C:\cloned-projects\web-lab-3\lib\jakarta.persistence-2.2.3.jar;C:\cloned-projects\web-lab-3\lib\javaee-api-7.0.jar;C:\cloned-projects\web-lab-3\lib\javax.servlet-api-3.1.0.jar;C:\cloned-projects\web-lab-3\lib\jsf-api-2.2.15.jar;C:\cloned-projects\web-lab-3\lib\jsf-impl-2.2.11.jar;C:\cloned-projects\web-lab-3\lib\junit-4.13.2.jar;C:\cloned-projects\web-lab-3\lib\junit-jupiter-5.9.3.jar;C:\cloned-projects\web-lab-3\lib\junit-jupiter-api-5.9.3.jar;C:\cloned-projects\web-lab-3\lib\opentest4j-1.0.0-M1.jar;C:\cloned-projects\web-lab-3\lib\postgresql-42.5.3.jar;C:\cloned-projects\web-lab-3\target\classes;C:\cloned-projects\web-lab-3\target\tests;C:\apache-ant-1.9.16\lib\ant-launcher.jar;C:\apache-ant-1.9.16\lib\ant.jar;C:\apache-ant-1.9.16\lib\ant-junit.jar;C:\apache-ant-1.9.16\lib\ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.16 compiled on July 10 2021" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -82,8 +82,8 @@
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="HitTest" name="testHitOnCorrectLimitData" time="0.247" />
-  <testcase classname="HitTest" name="testHitOnIncorrectData" time="0.039" />
+  <testcase classname="HitTest" name="testHitOnCorrectLimitData" time="0.268" />
+  <testcase classname="HitTest" name="testHitOnIncorrectData" time="0.042" />
   <testcase classname="HitTest" name="testHitOnCorrectData" time="0.033" />
   <system-out><![CDATA[Input coords: 0.0, 2.999999999, 3.0
 Input coords: 30.0, 1.0, 3.0

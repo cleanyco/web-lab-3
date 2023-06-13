@@ -21,12 +21,9 @@ public class HitTest {
         Hit hit = new Hit(2, 1, 3);
         processor.setHit(hit);
 
-        try {
-            processor.addHit();
-            Assertions.assertEquals("Hit", hit.getHit());
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        processor.addTestHit();
+        Assertions.assertEquals("Hit", hit.getHit());
+
     }
 
     @Test
@@ -41,12 +38,8 @@ public class HitTest {
         Hit hit = new Hit(30, 1, 3);
         processor.setHit(hit);
 
-        try {
-            processor.addHit();
-            Assertions.assertEquals("Miss", hit.getHit());
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        processor.addTestHit();
+        Assertions.assertEquals("Miss", hit.getHit());
     }
 
     @Test
@@ -61,11 +54,8 @@ public class HitTest {
         Hit hit = new Hit(0, 2.999999999, 3);
         processor.setHit(hit);
 
-        try {
-            processor.addHit();
-            Assertions.assertEquals("Hit", hit.getHit());
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        processor.addTestHit();
+        Assertions.assertEquals("Hit", hit.getHit());
+
     }
 }
