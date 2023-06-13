@@ -4,8 +4,6 @@ import utils.DatabaseConnector;
 import utils.DatabaseManager;
 import utils.Hit;
 
-import javax.faces.bean.ApplicationScoped;
-import javax.faces.bean.ManagedBean;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -14,7 +12,7 @@ import java.util.List;
 
 public class Processor {
     private DatabaseConnector databaseConnector = new DatabaseConnector("localhost",
-            "postgres",  "trymebitch", "postgres", 5432); //oops :)
+            "postgres",  "postgres", "postgres", 5432); //oops :)
     private DatabaseManager databaseManager = new DatabaseManager(databaseConnector.getConnection());
 
     private long startTime;
@@ -52,14 +50,14 @@ public class Processor {
         hit.setExecutionTime((System.currentTimeMillis() - startTime));
         hits.add(hit);
         databaseManager.addNewResult(hit);
-        hit = new Hit(hit.getX(), hit.getY(), hit.getR());
+//        hit = new Hit(hit.getX(), hit.getY(), hit.getR());
     }
 
     public String checkHit() {
         double x = hit.getX();
         double y = hit.getY();
         double R = hit.getR();
-        System.out.println("Входящие координаты: " + hit.getX() + ", " + hit.getY() + ", " + hit.getR());
+        System.out.println("Input coords: " + hit.getX() + ", " + hit.getY() + ", " + hit.getR());
         if (checkCircle(x, y, R) || checkRectangle(x, y, R) || checkTriangle(x, y, R)) {
             return "Hit";
         } else {

@@ -38,7 +38,7 @@ public class DatabaseManager {
             double x = round(resultSet.getFloat("x"), 2);
             double y = round(resultSet.getFloat("y"), 2);
             double r = round(resultSet.getFloat("r"), 2);
-            String time = resultSet.getString("time");
+            String time = resultSet.getString("curr_time");
             long execution_time = resultSet.getInt("execution_time");
             list.add(new Hit(x, y, r, time, execution_time, hit));
         }
