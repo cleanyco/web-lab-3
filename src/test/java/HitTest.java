@@ -1,17 +1,18 @@
 import beans.Processor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import utils.Hit;
 
 import java.sql.SQLException;
+
 
 public class HitTest {
 
     @Test
     @DisplayName("Should return \"Hit\" on valid data to hit")
-    void testHitOnCorrectData() {
-        Processor processor = null;
+    public void testHitOnCorrectData() {
+        Processor processor;
         try {
             processor = new Processor();
         } catch (SQLException e) {
@@ -30,8 +31,8 @@ public class HitTest {
 
     @Test
     @DisplayName("Should return \"Miss\" on invalid data to hit")
-    void testHitOnIncorrectData() {
-        Processor processor = null;
+    public void testHitOnIncorrectData() {
+        Processor processor;
         try {
             processor = new Processor();
         } catch (SQLException e) {
@@ -50,8 +51,8 @@ public class HitTest {
 
     @Test
     @DisplayName("Should return \"Hit\" on data hit limits")
-    void testHitOnCorrectLimitData() {
-        Processor processor = null;
+    public void testHitOnCorrectLimitData() {
+        Processor processor;
         try {
             processor = new Processor();
         } catch (SQLException e) {
