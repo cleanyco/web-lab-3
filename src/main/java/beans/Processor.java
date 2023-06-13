@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Processor {
     private DatabaseConnector databaseConnector = new DatabaseConnector("localhost",
-            "postgres",  "postgres", "postgres", 5432); //oops :)
+            "",  "", "", 5432); //oops :)
     private DatabaseManager databaseManager = new DatabaseManager(databaseConnector.getConnection());
 
     private long startTime;
