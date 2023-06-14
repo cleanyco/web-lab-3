@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="helios.cs.ifmo.ru" name="HitTest" skipped="0" tests="3" time="0.614" timestamp="2023-06-13T22:44:02">
+<testsuite errors="0" failures="0" hostname="helios.cs.ifmo.ru" name="HitTest" skipped="0" tests="3" time="2.667" timestamp="2023-06-13T22:37:13">
   <properties>
     <property name="ant.library.dir" value="/usr/local/share/java/apache-ant/lib" />
     <property name="ant.file.type" value="file" />
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU" />
     <property name="compiled.tests" value="target/tests" />
     <property name="sun.boot.library.path" value="/usr/local/openjdk17/lib" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/studs/s319066/new-lab-3/web-lab-3/reports/TEST-HitTest.xml crashfile=/home/studs/s319066/new-lab-3/web-lab-3/junitvmwatcher6030739127699132116.properties propsfile=/home/studs/s319066/new-lab-3/web-lab-3/junit852169157268869715.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/studs/s319066/new-lab-3/web-lab-3/reports/TEST-HitTest.xml crashfile=/home/studs/s319066/new-lab-3/web-lab-3/junitvmwatcher8630424161829548199.properties propsfile=/home/studs/s319066/new-lab-3/web-lab-3/junit11308019013049029021.properties" />
     <property name="jdk.debug" value="release" />
     <property name="test" value="src/test/java/" />
     <property name="sun.cpu.endian" value="little" />
@@ -73,9 +73,9 @@
     <property name="java.class.version" value="61.0" />
     <property name="ant.project.default-target" value="build" />
   </properties>
-  <testcase classname="HitTest" name="testHitOnCorrectLimitData" time="0.414" />
-  <testcase classname="HitTest" name="testHitOnIncorrectData" time="0.069" />
-  <testcase classname="HitTest" name="testHitOnCorrectData" time="0.048" />
+  <testcase classname="HitTest" name="testHitOnCorrectLimitData" time="2.47" />
+  <testcase classname="HitTest" name="testHitOnIncorrectData" time="0.066" />
+  <testcase classname="HitTest" name="testHitOnCorrectData" time="0.049" />
   <system-out><![CDATA[Input coords: 0.0, 2.999999999, 3.0
 Input coords: 30.0, 1.0, 3.0
 Input coords: 2.0, 1.0, 3.0

@@ -30,7 +30,7 @@
     </target>
 
     <target name="build" depends="compile">
-        <echo message="--- DU HASST ---"/>
+        <echo message="--- DU HAST ---"/>
         <jar destfile="${dest.jar}" basedir="${compiled.classes}" compress="false" index="true">
             <manifest>
                 <attribute name="Main-Class" value="com.company.Main"/>
@@ -48,7 +48,7 @@
     </target>
 
     <target name="test" depends="build">
-        <echo message="--- DU HASST MICH ---"/>
+        <echo message="--- DU HAST MICH ---"/>
         <available file="reports" property="reports.exists" />
         <antcall target="mkdir-reports" />
         <junit fork="true" printsummary="on">
@@ -66,10 +66,8 @@
 
     <target name="music" depends="build">
         <echo message="--- RAMMSTEIN ---"/>
-        <exec executable="cmd">
-            <arg value="/c"/>
-            <arg value="${musicPlayer} ${music}"/>
-            <arg value="-p"/>
+	<exec executable="${musicPlayer}">
+            <arg value="${music}"/>
         </exec>
     </target>
 

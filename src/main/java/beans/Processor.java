@@ -11,8 +11,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class Processor {
-    private DatabaseConnector databaseConnector = new DatabaseConnector("localhost",
-            "",  "", "", 5432); //oops :)
+    private DatabaseConnector databaseConnector = new DatabaseConnector("pg",
+            "s319066",  "pqQV7ek6KTnJlhV8", "studs", 5432); //oops :)
     private DatabaseManager databaseManager = new DatabaseManager(databaseConnector.getConnection());
 
     private long startTime;
